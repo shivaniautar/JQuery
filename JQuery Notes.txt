@@ -35,3 +35,8 @@ Events (functions to handle an event)
 Note that for the manipulation jQuery functions, there are few distinctions to make. The functions .html() and .text() are different in a key way: .html() can be used to insert new HTML markup, meaning new HTML tags. .text() is used to get or set just the text value of an HTML element. For instance, you could use .text() to change the text of a paragraph, but if you want to put an ordered list inside of the paragraph, you need to use .html() to insert the appropriate tags into the paragraph.
 
 Similarly, .append() and .html() do nearly the same thing; they both can alter the HTML content of the selected item. The function .append will add markup to the element in question, whereas .html() will overwrite the markup with whatever is run inside the parentheses. So keep in mind that if you want to add content, use .append(), but if you want to replace content, use .html().
+
+
+
+Introducing Dynamic Content
+With the use of  .html() and .append(), you have the ability to add new HTML content for any page you make. This is called dynamic content. The rules for adding jQuery listeners onto your dynamic content are a little tricky because at first, your browser doesn't know that the content is even there. 
